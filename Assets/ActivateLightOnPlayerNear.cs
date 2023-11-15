@@ -1,14 +1,22 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+
+
 
 public class ActivateLightOnPlayerNear : MonoBehaviour
 {
-    public GameObject FPSPlayer; // Riferimento al GameObject del giocatore in prima persona
-    private Light pointLight; // Riferimento alla Point Light della lanterna
-    private ParticleSystem particles; // Riferimento al Particle System della lanterna
+    public GameObject FPSPlayer; // Reference to the FPS player GameObject
+    public TextMeshProUGUI interactionText;
 
-    [SerializeField]
-    private float activationDistance = 1f;
-    private bool isPlayerNear = false;
+    // [SerializeField]
+    private float activationDistance = 1f; // Activation distance parameter
+
+    private Light pointLight;
+    private ParticleSystem particles;
+
+    private bool activeLantern = false;
 
     void Start()
     {
@@ -27,30 +35,23 @@ public class ActivateLightOnPlayerNear : MonoBehaviour
             Debug.LogError("Point Light or Particle System not found in FPSPlayer.");
             return;
         }
-        // Calcola la distanza tra il giocatore e questa lanterna
+
         float distanceToPlayer = Vector3.Distance(FPSPlayer.transform.position, transform.position);
-        // Controlla se il giocatore è abbastanza vicino alla lanterna
-        if (distanceToPlayer < activationDistance)
-        {
-            isPlayerNear = true;
-        }
-        else
-        {
-            isPlayerNear = false;
-        }
 
-        // Attiva o disattiva la Point Light e il Particle System in base alla vicinanza del giocatore
-        if (isPlayerNear)
+        if (distanceToPlayer < activationDistance) activeLantern = true;
+
+        if (activeLantern && !pointLight.enabled)
         {
-            if (pointLight != null && pointLight.enabled == false)
-            {
+            interactionText.gameObject.SetActive(true); 
+            if (Input.GetKeyDown(KeyCode.E)) {
                 pointLight.enabled = true;
-            }
-
-            if (particles != null)
-            {
                 particles.Play();
             }
+        } 
+        if (activeLantern && distanceToPlayer > activationDistance) {
+            interactionText.gameObject.SetActive(false);
+            activeLantern = false;
         }
+        
     }
 }

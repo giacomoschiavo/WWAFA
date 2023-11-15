@@ -214,8 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ded982522375b1469a5fbb75b3dbeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FPSPlayer: {fileID: 287825006411941123, guid: 67db32324da031b4fb80aadacd97d8b9, type: 3}
-  activationDistance: 1
+  FPSPlayer: {fileID: 0}
+  interactionText: {fileID: 0}
 --- !u!1 &1971045956001356
 GameObject:
   m_ObjectHideFlags: 0
