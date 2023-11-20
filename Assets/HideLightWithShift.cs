@@ -6,7 +6,7 @@ public class HideLightWithShift : MonoBehaviour
     public ParticleSystem particles;
     private float shiftPressedTime = 0f;
     private bool isShiftPressed = false;
-    private float sprintThreshold = 0.5f;
+    private float sprintThreshold = 2f;
 
     void Update()
     {
