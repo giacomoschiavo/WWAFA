@@ -20,6 +20,9 @@ public class SC_FPSController : MonoBehaviour
 
     [HideInInspector]
     public bool canMove = true;
+    public bool IsActionKeyActive { get; private set; } = false;
+
+
 
     void Start()
     {
@@ -35,6 +38,8 @@ public class SC_FPSController : MonoBehaviour
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
+
+        IsActionKeyActive = Input.GetKeyDown(KeyCode.E);
         // Press Left Shift to run
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
         float curSpeedX = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Vertical") : 0;
