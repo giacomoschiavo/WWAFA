@@ -2,9 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
-
-
 public class ActivateLightOnPlayerNear : MonoBehaviour
 {
     public GameObject FPSPlayer; // Reference to the FPS player GameObject
