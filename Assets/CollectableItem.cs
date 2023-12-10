@@ -9,7 +9,7 @@ public class CollectableItem : MonoBehaviour
     
     private bool isInRange = false;
     public TextMeshProUGUI interactionText;
-    public StoryScreen storyScreen;
+    public StoryScreen storyScreenManager;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -35,7 +35,7 @@ public class CollectableItem : MonoBehaviour
         if (isInRange && Input.GetKeyDown(KeyCode.E))
         {
             PickObject();
-            storyScreen.ShowStory();
+            storyScreenManager.ShowStory();
             interactionText.gameObject.SetActive(false); 
         }
     }
@@ -53,6 +53,6 @@ public class CollectableItem : MonoBehaviour
     {
         
         // Chiama HideStory nell'oggetto StoryScreen
-        storyScreen.HideStory();
+        storyScreenManager.HideStory();
     }
 }

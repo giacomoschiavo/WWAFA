@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public int collectedObjects = 0;
-    private int objectsToPick = 5;
+    // private int objectsToPick = 5;
     private const string saveKey = "collectedObjects";
     void Start()
     {
@@ -24,10 +24,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // Controlla se tutti gli oggetti sono stati raccolti
-        if (collectedObjects >= objectsToPick)
-        {
-            GameOver();
-        }
+        // if (collectedObjects >= objectsToPick)
+        // {
+        //     GameOver();
+        // }
     }
 
     private void GameOver()
