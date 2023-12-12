@@ -11,11 +11,14 @@ public class CollectableItem : MonoBehaviour
     public TextMeshProUGUI interactionText;
     public StoryScreen storyScreenManager;
 
+    private string interactionMessage = "Press E to pick up the object";
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             isInRange = true;
+            interactionText.text = interactionMessage;
             interactionText.gameObject.SetActive(true); 
         }
     }
