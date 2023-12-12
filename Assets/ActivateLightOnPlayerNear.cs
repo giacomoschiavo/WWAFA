@@ -15,6 +15,8 @@ public class ActivateLightOnPlayerNear : MonoBehaviour
 
     private bool activeLantern = false;
 
+    private string interactionMessage = "Press E to activate the lantern";
+
     void Start()
     {
         // In Start, find the Point Light and Particle System in FPSPlayer
@@ -35,10 +37,13 @@ public class ActivateLightOnPlayerNear : MonoBehaviour
 
         float distanceToPlayer = Vector3.Distance(FPSPlayer.transform.position, transform.position);
 
-        if (distanceToPlayer < activationDistance) activeLantern = true;
+        if (distanceToPlayer < activationDistance) {
+            activeLantern = true;
+        }
 
         if (activeLantern && !pointLight.enabled)
         {
+            interactionText.text = interactionMessage;
             interactionText.gameObject.SetActive(true); 
             if (Input.GetKeyDown(KeyCode.E)) {
                 pointLight.enabled = true;
