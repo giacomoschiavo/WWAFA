@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.5
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
-  m_SkyboxMaterial: {fileID: 10651, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641246, b: 0.5748184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6783,7 +6783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121406347551011659, guid: b3c01bafbe9c8fa4fbd4cd93e0eaad44, type: 3}
       propertyPath: m_Name
-      value: House 3
+      value: Father's room
       objectReference: {fileID: 0}
     - target: {fileID: 7399105663259972222, guid: b3c01bafbe9c8fa4fbd4cd93e0eaad44, type: 3}
       propertyPath: m_IsActive
@@ -12300,7 +12300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7121406347551011659, guid: b3c01bafbe9c8fa4fbd4cd93e0eaad44, type: 3}
       propertyPath: m_Name
-      value: House 2
+      value: Daughter's room
       objectReference: {fileID: 0}
     - target: {fileID: 7121406347551011659, guid: b3c01bafbe9c8fa4fbd4cd93e0eaad44, type: 3}
       propertyPath: m_IsActive
@@ -16250,7 +16250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1821571009
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16561,7 +16561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1843298786
 Light:
   m_ObjectHideFlags: 0
