@@ -18530,8 +18530,8 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.1
-      value: 1
+      time: 0.17818603
+      value: 1.1
       inSlope: -10.0039835
       outSlope: -10.0039835
       tangentMode: 0
@@ -18539,8 +18539,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.2
-      value: 0.5
+      time: 0.2907974
+      value: 0.49627686
       inSlope: -2.5009959
       outSlope: -2.5009959
       tangentMode: 0
@@ -18548,8 +18548,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.4
-      value: 0.25
+      time: 0.5034088
+      value: 0.23513794
       inSlope: -0.62524897
       outSlope: -0.62524897
       tangentMode: 0
@@ -18557,8 +18557,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.8050354
-      value: 0.0743103
+      time: 0.7671936
+      value: 0.09661865
       inSlope: -0.15631224
       outSlope: -0.15631224
       tangentMode: 0
@@ -31750,10 +31750,12 @@ SceneRoots:
   - {fileID: 1384486733}
   - {fileID: 1157616136}
   - {fileID: 1416818106}
-  - {fileID: 776942886}
-  - {fileID: 295986640}
-  - {fileID: 1598569687}
-  - {fileID: 1626661935}
-  - {fileID: 1845124913}
-  - {fileID: 2142968364}
-  - {fileID: 1114307183}
+  - {fileID: 510947912}
+  - {fileID: 938185151}
+  - {fileID: 1620002455}
+  - {fileID: 899424689}
+  - {fileID: 1979556699}
+  - {fileID: 1967057395}
+  - {fileID: 1874143456}
+  - {fileID: 1865516424}
+  - {fileID: 2003303688}
