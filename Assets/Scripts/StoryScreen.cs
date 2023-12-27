@@ -14,6 +14,14 @@ public class StoryScreen : MonoBehaviour
         "Echoes of Guilt"
     };
 
+    private string[] subTitles = new string[]{
+        "Father's letter",
+        "Daughter's diary",
+        "Wife's letter",
+        "Boss' journal",
+        "Tom's journal"
+    };
+
 
     private static string fatherStory = "My dear family,\n\n" +
         "My pen glides across these pages like a shadow in the dark. The family is scattered, separated for their well-being. I've entered into a dark pact with bad people, hoping to secure a better future for you. The empty rooms of the house are a reflection of my guilt. Every step in the darkness is a prayer that shields you from the monster I've unleashed.\n\n" +
@@ -50,6 +58,8 @@ public class StoryScreen : MonoBehaviour
 
     public GameObject storyCanvas;
     public TextMeshProUGUI storyTitle;
+
+    public TextMeshProUGUI storySubTitle;
     public TextMeshProUGUI storyText;
 
 
@@ -64,6 +74,7 @@ public class StoryScreen : MonoBehaviour
         storyCanvas.SetActive(true);
         storyTitle.text = storyTitles[storyNumber];
         storyText.text = storyTexts[storyNumber];
+        storySubTitle.text = subTitles[storyNumber];
         // reset scroll view position
         storyText.GetComponentInParent<ScrollRect>().verticalNormalizedPosition = 1f;
         Cursor.lockState = CursorLockMode.None;
