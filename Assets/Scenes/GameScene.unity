@@ -7733,7 +7733,7 @@ RectTransform:
   - {fileID: 1502714292}
   - {fileID: 1125725704}
   - {fileID: 583033588}
-  - {fileID: 681566022}
+  - {fileID: 1924622751}
   - {fileID: 1923155150}
   m_Father: {fileID: 1039752491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8539,42 +8539,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4896766740774158, guid: 2b41853036497ac4fa1d212a15ccff4c, type: 3}
   m_PrefabInstance: {fileID: 176194391}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &681566021
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 681566022}
-  m_Layer: 5
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &681566022
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681566021}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1924622751}
-  m_Father: {fileID: 609687543}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 544.15}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &692347150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4826429794532074, guid: a1c6dc8e84ded3c4fb88df867e83a271, type: 3}
@@ -16068,11 +16032,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dear Family,
+  m_text: '
+
+    Dear Family,
 
 
-    My pen glides across these pages like a shadow in the
-    dark. The family is scattered, separated for their well-being. I''ve entered
+    My pen glides across these pages like a shadow
+    in the dark. The family is scattered, separated for their well-being. I''ve entered
     into a dark pact with bad people, hoping to secure a better future for you. The
     empty rooms of the house are a reflection of my guilt. Every step in the darkness
     is a prayer that shields you from the monster I''ve unleashed.
@@ -16104,8 +16070,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -25620,12 +25586,12 @@ RectTransform:
   m_Children:
   - {fileID: 1511217180}
   - {fileID: 1341805090}
-  m_Father: {fileID: 681566022}
+  m_Father: {fileID: 609687543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 660.01, y: -272.08}
-  m_SizeDelta: {x: 1320, y: 544.15}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 544.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1924622752
 MonoBehaviour:
@@ -25670,7 +25636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9150943, g: 0.67956793, b: 0.13381095, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
