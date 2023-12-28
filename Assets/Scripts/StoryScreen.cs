@@ -56,16 +56,51 @@ public class StoryScreen : MonoBehaviour
         tomStory
     };
 
+    private string[] imagesPath = new string[]{
+        "Photos/father",
+        "Photos/daughter",
+        "Photos/wife",
+        "Photos/bossportrait",
+        "Photos/tom"
+    };
+
     public GameObject storyCanvas;
     public TextMeshProUGUI storyTitle;
 
     public TextMeshProUGUI storySubTitle;
     public TextMeshProUGUI storyText;
 
+    public Image storyImage;
+
+    private static Sprite fatherSprite;
+    private static Sprite daughterSprite;
+    private static Sprite wifeSprite;
+    private static Sprite bossSprite;
+    private static Sprite tomSprite;
+
+    private static Sprite[] storySprites;
 
     void Start()
     {
         storyCanvas.SetActive(false);
+        fatherSprite = Resources.Load<Sprite>(imagesPath[0]);
+        daughterSprite = Resources.Load<Sprite>(imagesPath[1]);
+        wifeSprite = Resources.Load<Sprite>(imagesPath[2]);
+        bossSprite = Resources.Load<Sprite>(imagesPath[3]);
+        tomSprite = Resources.Load<Sprite>(imagesPath[4]);
+
+        storySprites = new Sprite[]{
+            fatherSprite,
+            daughterSprite,
+            wifeSprite,
+            bossSprite,
+            tomSprite
+        };
+
+        if(Debug.isDebugBuild)
+        {
+            Debug.Log(storySprites[0]);
+        }
     }
 
     public void ShowStory()
@@ -73,8 +108,9 @@ public class StoryScreen : MonoBehaviour
         // Mostra il canvas e imposta il testo
         storyCanvas.SetActive(true);
         storyTitle.text = storyTitles[storyNumber];
-        storyText.text = storyTexts[storyNumber];
+        storyText.text = "\n" + storyTexts[storyNumber];
         storySubTitle.text = subTitles[storyNumber];
+        storyImage.sprite = storySprites[storyNumber];
         // reset scroll view position
         storyText.GetComponentInParent<ScrollRect>().verticalNormalizedPosition = 1f;
         Cursor.lockState = CursorLockMode.None;
