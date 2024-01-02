@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.07543958, g: 0.07543958, b: 0.07543958, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7697,7 +7697,7 @@ Transform:
   m_GameObject: {fileID: 526124587}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9940016, z: -0, w: -0.10936532}
-  m_LocalPosition: {x: -10.03, y: -0.2, z: -18.37}
+  m_LocalPosition: {x: -65.26, y: 4.72, z: 58.69}
   m_LocalScale: {x: 0.6668959, y: 0.6668959, z: 0.6668959}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23442,6 +23442,8 @@ MonoBehaviour:
   growlingAudioSource: {fileID: 1626787917}
   wanderingGrowlClip: {fileID: 8300000, guid: f607f649de9166e46b76be5de6cf16b7, type: 3}
   chasingGrowlClip: {fileID: 8300000, guid: cc0b31f8043b6854dbcba03f9e9f3ae8, type: 3}
+  jumpScareAudioSource: {fileID: 0}
+  jumpScareClip: {fileID: 0}
   currentState: 0
   player: {fileID: 526124591}
   destinationAmount: 2
