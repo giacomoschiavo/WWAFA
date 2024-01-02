@@ -8,12 +8,10 @@ public class ActivateLightOnPlayerNear : MonoBehaviour
     public TextMeshProUGUI interactionText;
 
     // [SerializeField]
-    private float activationDistance = 1f; // Activation distance parameter
 
     private Light pointLight;
     private ParticleSystem particles;
 
-    private bool activeLantern = false;
 
     private string interactionMessage = "Press E to activate the lantern";
 
@@ -27,33 +25,26 @@ public class ActivateLightOnPlayerNear : MonoBehaviour
         }
     }
 
-    void Update()
+    private void OnTriggerStay(Collider other)
     {
-        if (pointLight == null || particles == null)
-        {
-            Debug.LogError("Point Light or Particle System not found in FPSPlayer.");
-            return;
-        }
-
-        float distanceToPlayer = Vector3.Distance(FPSPlayer.transform.position, transform.position);
-
-        if (distanceToPlayer < activationDistance) {
-            activeLantern = true;
-        }
-
-        if (activeLantern && !pointLight.enabled)
+        if (other.CompareTag("Player") && !pointLight.enabled)
         {
             interactionText.text = interactionMessage;
             interactionText.gameObject.SetActive(true); 
+
             if (Input.GetKeyDown(KeyCode.E)) {
                 pointLight.enabled = true;
                 particles.Play();
             }
-        } 
-        if (activeLantern && distanceToPlayer > activationDistance) {
-            interactionText.gameObject.SetActive(false);
-            activeLantern = false;
         }
-        
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            interactionText.gameObject.SetActive(false); 
+        }
+    }
+
 }
