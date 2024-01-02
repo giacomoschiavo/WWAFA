@@ -97,10 +97,6 @@ public class StoryScreen : MonoBehaviour
             tomSprite
         };
 
-        if(Debug.isDebugBuild)
-        {
-            Debug.Log(storySprites[0]);
-        }
     }
 
     public void ShowStory()
@@ -124,5 +120,6 @@ public class StoryScreen : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         storyNumber++;
+        PlayerPrefs.SetInt("collectedObjects", storyNumber);
     }
 }

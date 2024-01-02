@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class TutorialManager : MonoBehaviour
         // Se abbiamo raggiunto la fine del tutorial, torna alla schermata iniziale
         if (currentScreenIndex >= tutorialScreens.Length)
         {
-            currentScreenIndex = 0;
+            SceneManager.LoadScene("GameScene");
         }
 
         tutorialScreens[currentScreenIndex].SetActive(true);

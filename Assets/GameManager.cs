@@ -7,33 +7,23 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public int collectedObjects = 0;
-    // private int objectsToPick = 5;
+    private int objectsToPick = 5;
     private const string saveKey = "collectedObjects";
+
+    public GameObject endingRock;
     void Start()
     {
         collectedObjects = PlayerPrefs.GetInt(saveKey, 0);
     }
 
-
-    private void onDestroy()
-    {
-        PlayerPrefs.SetInt(saveKey, collectedObjects);
-        PlayerPrefs.Save();
-    }
-
     void Update()
     {
         // Controlla se tutti gli oggetti sono stati raccolti
-        // if (collectedObjects >= objectsToPick)
-        // {
-        //     GameOver();
-        // }
+        int collectedObjects = PlayerPrefs.GetInt(saveKey, 0);
+        if(collectedObjects == objectsToPick)
+        {
+            // Se si, carica la scena del Game Over
+            endingRock.SetActive(false);
+        }
     }
-
-    private void GameOver()
-    {
-        // Carica la scena del Game Over
-        SceneManager.LoadScene("GameOverScene");
-    }
-
 }
