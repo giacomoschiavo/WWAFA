@@ -31,7 +31,7 @@ public class StoryScreen : MonoBehaviour
         "Your Father.\n\n";
 
     private static string daughterStory = "Dear diary,\n\n" +
-        "Today wasn't fun. Daddy's not here, and I miss him lots. Mommy and I are in a tiny home. I remember when Mommy and Daddy used to read me stories before bed to keep the monster away **when we all fell asleep**. Now, it feels like the monster is hiding in the shadows. Going to bed is scary now.\n\n" +
+        "Today wasn't fun. Daddy's not here, and I miss him lots. Mommy and I are in a tiny home. I remember when Mommy and Daddy used to read me stories before bed to keep the monster away when we all fell asleep. \nNow, it feels like the monster is hiding in the shadows. Going to bed is scary now.\n\n" +
         "See you tomorrow.\n\n";
 
     private static string wifeStory = "My dear,\n\n" +
@@ -40,7 +40,7 @@ public class StoryScreen : MonoBehaviour
         "With yearning,\n\n" +
         "Your Wife.\n\n";
 
-    private static string bossStory = "Ink stains these pages as I write the twisted tale. The broken family was under constant watch, monitored by a man named Tom. After the father repaid the debt, I decided it was time to end it all. I enlisted Tom, a shadow with a hunger for despair. He will execute the family when they reunite, and **all have fallen asleep**. The pieces on the chessboard move with cold intent, orchestrated to perfection. As I sit in my solitary armchair, I witness the unfolding tragedy, each move a step closer to the checkmate of their lives.\n\n" +
+    private static string bossStory = "Ink stains these pages as I write the twisted tale. The broken family was under constant watch, monitored by a man named Tom. After the father repaid the debt, I decided it was time to end it all. I enlisted Tom, a shadow with a hunger for despair. He will execute the family when they reunite, and all have fallen asleep. The pieces on the chessboard move with cold intent, orchestrated to perfection. As I sit in my solitary armchair, I witness the unfolding tragedy, each move a step closer to the checkmate of their lives.\n\n" +
         "All these letters and diaries now reside in my own journal, a chronicle of the darkness I've unleashed.\n\n" +
         "With cold intent,\n\n" +
         "The Boss.\n\n";
