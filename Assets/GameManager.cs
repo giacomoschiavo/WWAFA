@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -10,20 +12,23 @@ public class GameManager : MonoBehaviour
     private int objectsToPick = 5;
     private const string saveKey = "collectedObjects";
 
+    public TextMeshProUGUI collectText;
+
     public GameObject endingRock;
     void Start()
     {
-        collectedObjects = PlayerPrefs.GetInt(saveKey, 0);
+        // collectedObjects = PlayerPrefs.GetInt(saveKey, 0);
     }
 
     void Update()
     {
         // Controlla se tutti gli oggetti sono stati raccolti
-        int collectedObjects = PlayerPrefs.GetInt(saveKey, 0);
         if(collectedObjects == objectsToPick)
         {
             // Se si, carica la scena del Game Over
             endingRock.SetActive(false);
+            collectText.gameObject.SetActive(true); 
+            collectText.text = "Find the way out!";
         }
     }
 }

@@ -23,7 +23,6 @@ public class SC_FPSController : MonoBehaviour
     public bool IsActionKeyActive { get; private set; } = false;
 
 
-
     void Start()
     {
         characterController = GetComponent<CharacterController>();
