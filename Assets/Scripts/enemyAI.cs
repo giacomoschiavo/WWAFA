@@ -21,6 +21,10 @@ public class EnemyAI : MonoBehaviour
     public AudioSource growlingAudioSource;
     public AudioClip wanderingGrowlClip;
     public AudioClip chasingGrowlClip;
+
+    public AudioSource jumpScareAudioSource;
+
+    public AudioClip jumpScareClip;
     //
     public enum EnemyState
     {
@@ -165,7 +169,11 @@ public class EnemyAI : MonoBehaviour
 
     IEnumerator deathRoutine()
     {
+        growlingAudioSource.Stop();
+        footstepsAudioSource.Stop();
         yield return new WaitForSeconds(jumpscareTime);
+        
+
         SceneManager.LoadScene(deathScene);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
