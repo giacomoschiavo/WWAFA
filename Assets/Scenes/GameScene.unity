@@ -4002,7 +4002,7 @@ PrefabInstance:
       objectReference: {fileID: 1096124263}
     - target: {fileID: 3945927727468472474, guid: 09879190cc4c245ba9dda917142b6560, type: 3}
       propertyPath: m_Name
-      value: Zombie Idle (2)
+      value: Zombie viola
       objectReference: {fileID: 0}
     - target: {fileID: 4434093931162972704, guid: 09879190cc4c245ba9dda917142b6560, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14449,7 +14449,7 @@ PrefabInstance:
       objectReference: {fileID: 227433195}
     - target: {fileID: 3945927727468472474, guid: 09879190cc4c245ba9dda917142b6560, type: 3}
       propertyPath: m_Name
-      value: Zombie Idle (1)
+      value: Zombie blu
       objectReference: {fileID: 0}
     - target: {fileID: 4434093931162972704, guid: 09879190cc4c245ba9dda917142b6560, type: 3}
       propertyPath: m_LocalScale.x
@@ -45398,7 +45398,7 @@ PrefabInstance:
       objectReference: {fileID: 1924227880}
     - target: {fileID: 3945927727468472474, guid: 09879190cc4c245ba9dda917142b6560, type: 3}
       propertyPath: m_Name
-      value: Zombie Idle
+      value: Zombie verde
       objectReference: {fileID: 0}
     - target: {fileID: 4434093931162972704, guid: 09879190cc4c245ba9dda917142b6560, type: 3}
       propertyPath: m_LocalScale.x
