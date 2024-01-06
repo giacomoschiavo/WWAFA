@@ -41,6 +41,8 @@ public class EnemyAI : MonoBehaviour
     int randNum;
     public int destinationAmount;
 
+    private bool isJumpScareAudioPlayed = false;
+
     void Start()
     {
         randNum = Random.Range(0, destinations.Count);
@@ -49,6 +51,8 @@ public class EnemyAI : MonoBehaviour
         //
         footstepsAudioSource.clip = wanderingFootstepsClip;
         growlingAudioSource.clip = wanderingGrowlClip;
+        jumpScareAudioSource.clip = jumpScareClip;
+
         
         footstepsAudioSource.Play();
         growlingAudioSource.Play();
@@ -119,9 +123,6 @@ public class EnemyAI : MonoBehaviour
                 growlingAudioSource.Play();
             }
 
-            jumpScareAudioSource.clip = jumpScareClip;
-            jumpScareAudioSource.Play();
-
             dest = currentDest.position;
             ai.destination = dest;
             ai.speed = walkSpeed;
@@ -175,7 +176,11 @@ public class EnemyAI : MonoBehaviour
 
     IEnumerator deathRoutine()
     {
-        
+        if (!isJumpScareAudioPlayed)
+        {
+            jumpScareAudioSource.Play();
+            isJumpScareAudioPlayed = true;
+        }
         growlingAudioSource.Stop();
         footstepsAudioSource.Stop();
         yield return new WaitForSeconds(jumpscareTime);
@@ -183,4 +188,5 @@ public class EnemyAI : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
 }

@@ -14316,6 +14316,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 526124591}
     - target: {fileID: 2897951615691329009, guid: 09879190cc4c245ba9dda917142b6560, type: 3}
+      propertyPath: jumpscareTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897951615691329009, guid: 09879190cc4c245ba9dda917142b6560, type: 3}
       propertyPath: destinations.Array.data[0]
       value: 
       objectReference: {fileID: 1050553224}
