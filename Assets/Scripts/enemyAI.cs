@@ -121,7 +121,7 @@ public class EnemyAI : MonoBehaviour
 
             jumpScareAudioSource.clip = jumpScareClip;
             jumpScareAudioSource.Play();
-            //
+
             dest = currentDest.position;
             ai.destination = dest;
             ai.speed = walkSpeed;
