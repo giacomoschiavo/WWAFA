@@ -49,6 +49,7 @@ public class EnemyAI : MonoBehaviour
         //
         footstepsAudioSource.clip = wanderingFootstepsClip;
         growlingAudioSource.clip = wanderingGrowlClip;
+        
         footstepsAudioSource.Play();
         growlingAudioSource.Play();
         //
@@ -79,6 +80,8 @@ public class EnemyAI : MonoBehaviour
             {
                 growlingAudioSource.clip = chasingGrowlClip;
                 growlingAudioSource.Play();
+                
+                
             }
             //
             StopCoroutine("stayIdle");
@@ -115,6 +118,9 @@ public class EnemyAI : MonoBehaviour
                 growlingAudioSource.clip = wanderingGrowlClip;
                 growlingAudioSource.Play();
             }
+
+            jumpScareAudioSource.clip = jumpScareClip;
+            jumpScareAudioSource.Play();
             //
             dest = currentDest.position;
             ai.destination = dest;
@@ -169,11 +175,10 @@ public class EnemyAI : MonoBehaviour
 
     IEnumerator deathRoutine()
     {
+        
         growlingAudioSource.Stop();
         footstepsAudioSource.Stop();
         yield return new WaitForSeconds(jumpscareTime);
-        
-
         SceneManager.LoadScene(deathScene);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
