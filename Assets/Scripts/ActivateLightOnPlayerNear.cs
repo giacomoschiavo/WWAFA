@@ -15,6 +15,8 @@ public class ActivateLightOnPlayerNear : MonoBehaviour
 
     private string interactionMessage = "Press E to activate the lantern";
 
+    private bool inRange = false;
+
     void Start()
     {
         // In Start, find the Point Light and Particle System in FPSPlayer
@@ -25,17 +27,23 @@ public class ActivateLightOnPlayerNear : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.E) && inRange)
+        {
+            pointLight.enabled = true;
+            particles.Play();
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && !pointLight.enabled)
         {
+            inRange = true;
             interactionText.text = interactionMessage;
             interactionText.gameObject.SetActive(true); 
-
-            if (Input.GetKeyDown(KeyCode.E)) {
-                pointLight.enabled = true;
-                particles.Play();
-            }
         }
     }
 
@@ -44,6 +52,7 @@ public class ActivateLightOnPlayerNear : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             interactionText.gameObject.SetActive(false); 
+            inRange = false;
         }
     }
 

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI collectText;
 
     public GameObject endingRock;
+    public GameObject endingArrows;
     void Start()
     {
         // collectedObjects = PlayerPrefs.GetInt(saveKey, 0);
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
         {
             // Se si, carica la scena del Game Over
             endingRock.SetActive(false);
+            endingArrows.SetActive(true);
             collectText.gameObject.SetActive(true); 
             collectText.text = "Find the way out!";
         }
