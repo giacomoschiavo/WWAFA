@@ -23,37 +23,41 @@ public class StoryScreen : MonoBehaviour
     };
 
 
-    private static string fatherStory = "My dear family,\n\n" +
-        "My pen glides across these pages like a shadow in the dark. The family is scattered, separated for their well-being.\n" + 
-        "I've entered into a dark pact with bad people, hoping to secure a better future for you. The empty rooms of the house are a reflection of my guilt. Every step in the darkness is a prayer that shields you from the monster I've unleashed.\n" +
-        "In this silent space, my thoughts reach out to you, my dearest wife and daughter. These words carry the weight of a promise to reunite, to rebuild what has been shattered. But beware, for in the shadows lurks a monster, unleashed not by demons, but by choices made in desperation.\n" +
-        "May these written words guide you through the labyrinth of our lives, where every turn reveals a fragment of our shared history.\n\n" +
-        "With love and regret,\n" +
+    private static string fatherStory = "Dear family,\n" +
+        "I'm writing with a heavy heart. The family is apart right now, each one looking out for themselves.\n" +
+        "I made some not-so-good deals with some bad people, thinking it would help us in the long run. The quiet house reminds me of the mistakes I've made. I'm trying my best to protect you from the consequences of the choices I've made.\n" +
+        "I want to reach out to my dear wife and daughter. These words I'm writing hold a promise to bring us back together and fix what's broken. But be cautious, because there's a problem caused not by demons, but by the desperate decisions I've made.\n" +
+        "I hope these words can be a guide through the confusing paths of our lives, where each twist and turn tells a piece of our story.\n\n" +
+        "With love and apologies,\n" +
         "Your Father.\n\n";
 
-    private static string daughterStory = "Dear diary,\n\n" +
+    private static string daughterStory = "Dear diary,\n" +
         "Today wasn't fun. Daddy's not here, and I miss him lots. Mommy and I are in a tiny home.\n" +
-        "I remember when Mommy and Daddy used to read me stories before bed to keep the monster away when we all fell asleep. \nNow, it feels like the monster is hiding in the shadows. Going to bed is scary now.\n\n" +
+        "I remember when Mommy and Daddy used to read me stories before bed to keep the monster away when we all fell asleep. Now, it feels like the monster is hiding in the shadows. Going to bed is scary now.\n\n" +
         "See you tomorrow.\n\n";
 
-    private static string wifeStory = "My dear,\n\n" +
-        "Nights are getting scarier. I feel like I'm being watched from the window when we all fall asleep.\n" + 
-        "The shadows in the room seem to morph into a haunting presence, an ominous figure that lingers in the darkness.\nMany times, I've glimpsed this creature, dark and haunting, staring at me from outside. Its eyes pierce through the night, and the air is thick with an unsettling tension.\n" +
+
+    private static string wifeStory = "My dear,\n" +
+        "Nights are getting scarier. I feel like I'm being watched from the window when we all fall asleep.\n" +
+        "The shadows in the room seem to morph into a haunting presence, an ominous figure that lingers in the darkness.\n" +
+        "Many times, I've glimpsed this creature, dark and haunting, staring at me from outside. Its eyes pierce through the night, and the air is thick with an unsettling tension.\n" +
         "I long to be back with my husband; it's where I feel safest. Going to bed is frightening now, as if the room itself is a canvas for my deepest fears.\n\n" +
         "With yearning,\n" +
         "Your Wife.\n\n";
 
-    private static string bossStory = "Ink stains these pages as I write the twisted tale. The broken family was under constant watch, monitored by a man named Tom.\n"+ 
-        "After the father repaid the debt, I decided it was time to end it all. I enlisted Tom, a shadow with a hunger for despair. He will execute the family when they reunite, and all have fallen asleep.\n"+ 
+
+    private static string bossStory = "Ink stains these pages as I write the twisted tale. The broken family was under constant watch, monitored by a man named Tom.\n" +
+        "After the father repaid the debt, I decided it was time to end it all. I enlisted Tom, a shadow with a hunger for despair. He will execute the family when they reunite, and all have fallen asleep.\n" +
         "The pieces on the chessboard move with cold intent, orchestrated to perfection. As I sit in my solitary armchair, I witness the unfolding tragedy, each move a step closer to the checkmate of their lives.\n" +
         "All these letters and diaries now reside in my own journal, a chronicle of the darkness I've unleashed.\n\n" +
         "With cold intent,\n" +
         "The Boss.\n\n";
 
     private static string tomStory = "Hi, Tom,\n" +
-        "it's me, or should I say, it's you.\nI'm your subconscious.\n" + 
+        "it's me, or should I say, it's you.\nI'm your subconscious.\n" +
         "In the shadows of ink, I inscribe my final confession. Having extinguished the family while they slumbered, you fled, only to meet the unyielding force of a speeding car.\nPlunged into a coma, I conjured a cavern where death hunts, blind yet attuned to the breath of the living, including yours.\n\nAfter all you've wrought upon that family, do you truly deserve survival?\nThe echoes of their fading dreams reverberate through the cavern, a haunting reminder of your deeds.\n\n"+
-        "Do you truly deserve to live?";
+        "Now you have to choose between life and death.";
+
     private string[] storyTexts = new string[]{
         fatherStory,
         daughterStory,
