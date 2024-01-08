@@ -11,7 +11,7 @@ public class CollectableItem : MonoBehaviour
     public TextMeshProUGUI interactionText;
     public StoryScreen storyScreenManager;
 
-    private string interactionMessage = "Press E to pick up the object";
+    private string interactionMessage = "Press E to read the story";
 
     private void OnTriggerEnter(Collider other)
     {

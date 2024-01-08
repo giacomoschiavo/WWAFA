@@ -911,17 +911,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You wake up in a dark cave.
-
-
-    You don''t remember who you are.
-
-
-    Survive
-    by collecting the 5 pieces of your broken memory.
-
-
-    Avoid Akumu.'
+  m_text: "Wake up in a dark cave, clueless about who you are or \nhow you got here.\r\n\r\nFind
+    5 pieces of your lost memories to escape.\r\n\r\nWatch out for Akumu, a creepy
+    threat in the darkness.\nAkumu can't invade your memories, you're safe there.\n\nUnfold
+    the story as you go.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5178d8f16a23aac4eb87778202a5f5ae, type: 2}
   m_sharedMaterial: {fileID: -2963636454390671697, guid: 5178d8f16a23aac4eb87778202a5f5ae, type: 2}
@@ -984,7 +977,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -0.013504008}
+  m_margin: {x: 0, y: 0, z: 0, w: -27.293213}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1225,21 +1218,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'To move use the W, A, S, D buttons
-
-
-    You can jump with SPACE.
-
-
-    You
-    can run while holding the SHIFT button.
-
-
-    Running for too long will make
-    your candle die, be careful.
-
-
-    Use E to interact with the object.'
+  m_text: "Move around using W, A, S, D keys.\r\n\rJump with the SPACE key.\r\n\n\rHold
+    SHIFT to run, but be careful \u2013 \ntoo much running can dim your light.\r\n\n\rLight
+    up your lantern at specific spots in the map.\r\n\rInteract with objects using
+    E.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5178d8f16a23aac4eb87778202a5f5ae, type: 2}
   m_sharedMaterial: {fileID: -2963636454390671697, guid: 5178d8f16a23aac4eb87778202a5f5ae, type: 2}

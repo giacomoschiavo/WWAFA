@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject endingRock;
     public GameObject endingArrows;
+
+    public TextMeshProUGUI diariesPickedText;
     void Start()
     {
         // collectedObjects = PlayerPrefs.GetInt(saveKey, 0);
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        diariesPickedText.text = collectedObjects.ToString() + "/5";
         // Controlla se tutti gli oggetti sono stati raccolti
         if(collectedObjects == objectsToPick)
         {
